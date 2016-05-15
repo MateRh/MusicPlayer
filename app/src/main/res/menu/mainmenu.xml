@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item
+        android:id="@+id/action0"
+        android:title="Artists">
+    </item>
+   <item
+        android:id="@+id/action1"
+        android:title="Player">
+    </item>
+
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/play"
+        android:title="Refresh"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings">
+    </item>
+
+</menu>

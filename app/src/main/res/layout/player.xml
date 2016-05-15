@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@drawable/backgroundgradient"
+
+>
+<ImageView   android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:tileMode="repeat"
+        android:scaleType="fitXY"
+        android:src="@drawable/drawablebg" ></ImageView>
+
+    <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/playButton" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:src="@drawable/play" android:maxHeight="64dp"
+            android:maxWidth="64dp" android:scaleType="fitXY" android:background="#00ffffff" android:alpha="75"
+            android:layout_marginBottom="20dp"/>
+    <ImageButton android:layout_width="56dp" android:layout_height="56dp" android:id="@+id/next"
+                 android:src="@drawable/forward" android:maxHeight="64dp" android:maxWidth="64dp" android:scaleType="fitXY"
+                 android:background="#00ffffff" android:layout_alignTop="@+id/playButton"
+                 android:layout_toRightOf="@+id/playButton" android:layout_toEndOf="@+id/playButton"
+                 android:layout_marginStart="10dp" android:layout_marginTop="5dp" android:alpha="50"/>
+    <ImageButton android:layout_width="50dp" android:layout_height="50dp" android:id="@+id/imageButton6"
+                 android:src="@drawable/repeat" android:maxHeight="64dp" android:maxWidth="64dp" android:scaleType="fitXY"
+                 android:background="#00ffffff" android:layout_alignTop="@+id/next"
+                 android:layout_toRightOf="@+id/next" android:layout_toEndOf="@+id/next"
+                 android:layout_marginLeft="10dp" android:layout_marginStart="10dp" android:alpha="25"
+                 android:layout_marginTop="2dp"/>
+    <ImageButton android:layout_width="56dp" android:layout_height="56dp" android:id="@+id/prev"
+                 android:src="@drawable/rewind" android:maxHeight="64dp" android:maxWidth="64dp" android:scaleType="fitXY"
+                 android:background="#00ffffff" android:layout_alignTop="@+id/playButton"
+                 android:layout_toLeftOf="@+id/playButton" android:layout_toStartOf="@+id/playButton"
+                 android:layout_marginRight="10dp" android:layout_marginEnd="10dp" android:layout_marginTop="5dp"
+                 android:alpha="50"/>
+    <ImageButton android:layout_width="50dp" android:layout_height="50dp" android:id="@+id/imageButton8"
+                 android:src="@drawable/repeat" android:maxHeight="64dp" android:maxWidth="64dp" android:scaleType="fitXY"
+                 android:background="#00ffffff" android:layout_alignTop="@+id/prev"
+                 android:layout_toLeftOf="@+id/prev" android:layout_toStartOf="@+id/prev"
+                 android:layout_marginRight="10dp" android:layout_marginEnd="10dp" android:alpha="25"
+                 android:layout_marginTop="2dp"/>
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar2" android:layout_above="@+id/imageButton8"
+            android:layout_marginBottom="10dp"
+            android:max="1000000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_marginLeft="35dp" android:layout_marginRight="35dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:id="@+id/artistalbum"
+            android:layout_marginBottom="17dp" android:textColor="#e1e1e1" android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true" android:textSize="18sp" android:layout_marginTop="-10dp"
+                        android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:id="@+id/title" android:layout_above="@+id/artistalbum" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp" android:textColor="#e1e1e1" android:textSize="24sp"
+                        android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"/>
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView4" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_above="@+id/title" android:src="@drawable/disc" android:layout_marginBottom="10dp"
+            android:background="#19757575"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:textColor="#c8ffffff" android:textIsSelectable="false"
+            android:textSize="18sp" android:layout_above="@+id/seekBar2" android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp" android:layout_marginBottom="5dp"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MP3 320 kbs / 44100 Hz / Stereo"
+            android:id="@+id/info" android:layout_below="@+id/next" android:layout_centerHorizontal="true"
+            android:textSize="8sp" android:layout_marginTop="10dp" android:textColor="#7dffffff"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="00:00"
+              android:id="@+id/trackTime" android:textColor="#e1e1e1" android:textSize="10sp"
+              android:textAlignment="center"
+              android:layout_alignTop="@+id/seekBar2" android:layout_alignParentLeft="false"
+              android:layout_alignParentStart="false"
+              android:layout_marginLeft="10dp" android:layout_marginTop="7dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="99:59"
+              android:id="@+id/trackLenght" android:textColor="#e1e1e1" android:textSize="10sp"
+              android:layout_alignTop="@+id/seekBar2"
+              android:layout_alignParentRight="true" android:layout_marginRight="10dp" android:layout_marginTop="7dp"
+              android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"/>
+
+</RelativeLayout>
